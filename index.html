@@ -1,0 +1,135 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Chris Chafin</title>
+  <link rel="icon" href="img/favicon-connectdevelop.ico" type="image/x-icon">
+  <meta name="Chris Chafin" content="SitePoint">
+  <!-- BS 4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <!-- Animate CSS -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">  
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/base.css">
+
+</head>
+  <body>
+    <div class="container-fluid" style="position:relative;">
+      <button type="button" class="btn btn-dark" id="switcher" onclick="dark()">
+        <i class="far fa-sun" id="switch_icon"></i>
+      </button>
+      <!-- main content -->
+      <!-- summary -->
+      <div class="overflow-hidden p-3 p-md-5 m-md-3 text-center" id="summary">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+          <h1 class="display-4 font-weight-normal">Hi there! I am Chris Chafin</h1>
+          <p class="lead font-weight-normal">I am a developer focused on creating clean, beautiful, pixel perfect experiences</p>
+        </div>
+      </div>
+      <!-- background -->
+      <div class="overflow-hidden p-3 p-md-5 m-md-3 text-center row" id="background">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+          <h1 class="display-4 font-weight-normal">Background</h1>
+          <p class="lead font-weight-normal">I graduated from the University of North Texas in 2014 and started my career at Fidelity Investments. <br/><br/>Since then, I have worked with companies such as Transamerica and Square205.</p>
+          <p class="lead font-weight-normal">My goals as a developer are to bring designs to life and make them as scalable and user friendly as possible. I approach each situation from a user's perspective. I ask myself "what would I like to see on this page?" and "what possible deal breakers can I avoid?" to accomplish my goal.</p>
+          <p class="lead font-weight-normal">In my down time, I like to make and produce music. You can listen to my music on my soundcloud here: <a href="https://soundcloud.com/blue-sky-spirits" target="_blank" style="text-decoration: underline;"><i class="fab fa-soundcloud"></i> Blue-Sky Spirits</a></p>
+        </div>                
+      </div>  
+      <!-- experience -->
+      <div class="d-md-flex flex-md-equal w-100" id="experience">
+        <div class="text-center overflow-hidden" id="work">
+          <div class="my-3 py-3">
+            <h2 class="display-5">Experience</h2>
+            <p class="lead"><a class="work-link" href="http://www.square205.com" target="_blank">Square205</a> - Contract Developer</p>
+            <small>Aug 2017 - Present</small>
+            <p class="lead"><a class="work-link" href="https://www.transamerica.com/individual/" target="_blank">Transamerica</a> - UI Developer</p>
+            <small>Oct 2017 - Apr 2018</small>
+            <p class="lead"><a class="work-link" href="https://www.fidelity.com/" target="_blank">Fidelity Investments</a> - Associate Software Developer Engineer</p>
+            <small>Jun 2014 - Jun 2017</small>
+            <p class="lead"><a class="work-link" href="https://www.fidelity.com/" target="_blank">Fidelity Investments</a> - Cloud Development Intern</p>
+            <small>May 2013 - Aug 2013</small><br />
+          </div>
+        </div>
+        <div class="text-center overflow-hidden" id="skills">
+          <div class="my-3 p-3">
+            <h2 class="display-5">Skills</h2>
+            <p class="lead">Languages</p>
+            <small>Javascript (ES6)</small>
+            <small>Typescript</small>
+            <small>CSS/SCSS</small>
+            <small>Java</small>
+            <small>Python</small>
+            <div class="skill-list">
+              <p class="lead">Libraies & Frameworks</p>
+              <small>Angular 2+</small>
+              <small>ReactJS</small>
+              <small>Node.JS</small>
+              <small>VueJS</small>
+              <p class="lead">Tools</p>
+              <small>Git + Github</small>
+              <small>JIRA</small>
+              <small>Jenkins</small>
+              <small>SourceTree</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- resume link -->
+      <div class="resume text-center">
+        <a class="lead" id="resume-link" href="docs/Christopher_Chafin_Resume.pdf" target="_blank"><i class="far fa-hand-point-right"></i> Full Resume <i class="far fa-hand-point-left"></i></a>
+      </div>  
+      <!-- projects -->
+      <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center" id="projects">
+        <!-- weather -->
+        <a class='lead' href='weather-app/weather-2.html' target='_blank'>Weather App</a>
+        <br/>
+        <!-- dogs -->
+        <a class="lead" href='dogs.html' target='_blank'>Dogos</a>
+      </div>
+
+      <!-- footer -->
+      <footer class="container py-3">
+        <div class="row">
+            <div class="col-12 col-md">
+              <!-- Icon -->
+              <small class="d-block mb-3 text-muted">Chris Chafin © 2017-2018 All Rights Reserved</small>
+              <small class="d-block mb-3 text-muted">chris182@verizon.net</small>
+            </div>
+            <div class="col-6 col-md">
+              <ul class="list-unstyled text-small">
+                <li><a class="footer_link" href="mailto:chris182@verizon.net"><i class="far fa-envelope"></i> Email Me</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md">
+              <ul class="list-unstyled text-small">
+                <li><a class="footer_link" href="https://www.linkedin.com/in/christopher-chafin/"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md">
+              <ul class="list-unstyled text-small">
+                <li><a class="footer_link" href="https://codepen.io/ChrisChafin/"><i class="fab fa-codepen"></i> CodePen</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md">
+              <ul class="list-unstyled text-small">
+                <li><a class="footer_link" href="https://github.com/ChrisChafin"><i class="fab fa-github"></i> Github</a></li>
+              </ul>
+            </div>                              
+        </div>
+      </footer>
+    </div>
+    
+    
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
