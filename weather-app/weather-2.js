@@ -35,7 +35,6 @@ function getWeather(){
     datatype: 'json',
     success: function(data){
       $('#video-bg').empty();
-      // let weatherStr= "602";
       let weatherStr = data.weather[0].id.toString();
       let search = weatherStr.match(/\d/)
       let weatherCode = search[0];
