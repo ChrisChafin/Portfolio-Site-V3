@@ -1,5 +1,12 @@
 $(document).ready(function() {
   //for dark/light color scheme
+  lightOrDark();
+
+  // todo, add to top button
+
+});
+
+function lightOrDark(){
   const d = new Date();
   const hours = d.getHours();
   const night = hours >= 19 || hours <= 7;
@@ -7,37 +14,46 @@ $(document).ready(function() {
 
   if (night) {
     body.classList.add('dark');
-    $('#album').toggleClass('bg-light bg-dark');
     $('.jumbotron').toggleClass('no-bg');
     $('#switcher').toggleClass('btn-light btn-dark');
     $('#switch_icon').toggleClass('fa-sun fa-moon');
   }
-  // for to top btn
-  const introHeight = document.querySelector('#summary').offsetHeight;
-  // const topButton = document.getElementById('top-button');
-  // const $topButton = $('#top-button');
-
-  // window.addEventListener(
-  //   'scroll',
-  //   function() {
-  //     if (window.scrollY > introHeight) {
-  //       $topButton.fadeIn();
-  //     } else {
-  //       $topButton.fadeOut();
-  //     }
-  //   },
-  //   false
-  // );
-
-  // topButton.addEventListener('click', function() {
-  //   $('html, body').animate({ scrollTop: 0 }, 500);
-  // });
-});
+}
 
 function dark(){
   const body = document.body;
   body.classList.toggle("dark");
   $('#switcher').toggleClass('btn-light btn-dark');
+  $('#switcher_dogs').toggleClass('btn-light btn-dark');
   $('#album').toggleClass('bg-light bg-dark');
   $('#switch_icon').toggleClass('fa-sun fa-moon');
-} 
+}
+
+$.fn.isInViewport = function() {
+  var elementTop = $(this).offset().top;
+  var elementBottom = elementTop + $(this).outerHeight();
+
+  var viewportTop = $(window).scrollTop();
+  var viewportBottom = viewportTop + $(window).height();
+
+  return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+
+$(window).on('resize scroll', function() {
+  //animations for the home page
+  if($('#background').isInViewport()) {
+    $('#background').addClass('animated flip')
+  }
+  if($('#experience').isInViewport()) {
+    $('#experience').addClass('animated rollIn')
+  }
+  if($('#resume-section').isInViewport()) {
+    $('#resume-section').addClass('animated slideInUp')
+  }
+  if($('#projects').isInViewport()) {
+    $('#projects').addClass('animated bounceInUp')
+  }
+  if($('#footer').isInViewport()) {
+    $('#footer').addClass('animated slideInUp')
+  }
+})
