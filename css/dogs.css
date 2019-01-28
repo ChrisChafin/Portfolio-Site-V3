@@ -17,3 +17,7 @@ img {
 #switcher_dogs {
   float: right;
 }
+
+.jumbotron {
+  background-color: transparent;
+}
